@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ReplaySubject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject } from 'rxjs';
 import {map} from 'rxjs/operators';
 import { User } from '../_models/user';
 @Injectable({
@@ -9,7 +9,7 @@ import { User } from '../_models/user';
 export class AccountService {
 
   baseUrl='https://localhost:5001/api/';
-  private currentUserSource=new ReplaySubject<User>(1);
+  private currentUserSource=new BehaviorSubject<User | null>(null);
   currentUser$=this.currentUserSource.asObservable();
   constructor(private http:HttpClient) { }
 
@@ -46,6 +46,6 @@ export class AccountService {
   logout()
   {
     localStorage.removeItem('user');
-    //this.currentUserSource.next(null);
+    this.currentUserSource.next(null);
   }
 }
