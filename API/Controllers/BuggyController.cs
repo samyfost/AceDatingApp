@@ -40,6 +40,7 @@ namespace API.Controllers
             var thingToReturn = thing.ToString();
 
             return thingToReturn;
+        
         }
         [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
