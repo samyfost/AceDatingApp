@@ -8,7 +8,7 @@
       "LastActive": "2020-05-27",
       "Introduction": "Hi there! I'm Rosemary, and I believe that life is meant to be lived to the fullest. I enjoy exploring new places and meeting interesting people. Let's make some unforgettable memories together!",
       "LookingFor": "I'm looking for someone who shares my sense of adventure and loves to travel. Someone who enjoys good conversations and appreciates the simple joys of life.",
-      "Interests": "My interests range from hiking in the mountains to cozy evenings by the fireplace. I also have a passion for cooking and trying out new recipes.",
+      "Interest": "My interests range from hiking in the mountains to cozy evenings by the fireplace. I also have a passion for cooking and trying out new recipes.",
       "City": "Advance",
       "Country": "Philippines",
       "Photos": [
@@ -27,7 +27,7 @@
       "LastActive": "2020-05-02",
       "Introduction": "Hello! I'm Janelle, and I believe that every day is a new opportunity for growth and happiness. I'm a firm believer in kindness and positivity, and I'm excited to share laughter and joy with someone special.",
       "LookingFor": "I'm looking for a kind-hearted individual who values compassion and empathy. Someone who enjoys exploring the beauty of nature and finding joy in the little things.",
-      "Interests": "My interests include gardening, painting, and volunteering for charitable causes. I find solace in nature and love spending time in my garden.",
+      "Interest": "My interests include gardening, painting, and volunteering for charitable causes. I find solace in nature and love spending time in my garden.",
       "City": "Norris",
       "Country": "Cocos (Keeling Islands)",
       "Photos": [
@@ -46,7 +46,7 @@
       "LastActive": "2020-05-08",
       "Introduction": "Greetings! I'm Twila, and I believe that life is an adventure waiting to be embraced. I'm a free spirit who enjoys spontaneous road trips, and I'm looking for a fellow explorer to join me on this journey called life.",
       "LookingFor": "I'm seeking a fellow adventurer who shares my love for spontaneity and has a passion for discovering new places. Let's create our own stories and fill our lives with excitement!",
-      "Interests": "My interests include photography, dancing, and stargazing. I'm always up for a dance under the stars or capturing the beauty of the night sky.",
+      "Interest": "My interests include photography, dancing, and stargazing. I'm always up for a dance under the stars or capturing the beauty of the night sky.",
       "City": "Ada",
       "Country": "Anguilla",
       "Photos": [
@@ -65,7 +65,7 @@
       "LastActive": "2020-05-06",
       "Introduction": "Hey there! I'm Antonia, and I believe that the key to a happy life is to cherish every moment. I'm a firm believer in enjoying the present and making the most of it. Let's savor life together!",
       "LookingFor": "I'm looking for someone who values mindfulness and appreciates the beauty of the present moment. If you enjoy quiet evenings and meaningful conversations, we might be a perfect match.",
-      "Interests": "My interests include meditation, yoga, and reading. I find tranquility in meditation and enjoy practicing it regularly.",
+      "Interest": "My interests include meditation, yoga, and reading. I find tranquility in meditation and enjoy practicing it regularly.",
       "City": "Sidman",
       "Country": "Bahrain",
       "Photos": [
@@ -84,7 +84,7 @@
       "LastActive": "2020-06-16",
       "Introduction": "Hi, I'm Chelsea, and I believe that life is an exciting journey filled with endless possibilities. I'm an optimist who enjoys taking on new challenges and making the most out of every day.",
       "LookingFor": "I'm looking for someone who shares my zest for life and is open to trying new things. If you're passionate about personal growth and love to laugh, let's connect!",
-      "Interests": "My interests include hiking, cooking international cuisines, and learning new languages. I'm always up for an adventure in the great outdoors or experimenting with new recipes from around the world.",
+      "Interest": "My interests include hiking, cooking international cuisines, and learning new languages. I'm always up for an adventure in the great outdoors or experimenting with new recipes from around the world.",
       "City": "Snelling",
       "Country": "Turkey",
       "Photos": [
@@ -103,7 +103,7 @@
         "LastActive": "2020-05-11",
         "Introduction": "Hello! I'm Montoya, and I believe that life is a grand adventure waiting to be explored. I have an adventurous spirit and love to try new things. Let's embark on this journey together!",
         "LookingFor": "I'm looking for someone who shares my sense of adventure and loves exploring the world. Whether it's hiking in the mountains or trying exotic cuisines, let's create memorable experiences together.",
-        "Interests": "My interests include outdoor activities like hiking and camping. I'm also a food enthusiast and enjoy trying dishes from different cultures.",
+        "Interest": "My interests include outdoor activities like hiking and camping. I'm also a food enthusiast and enjoy trying dishes from different cultures.",
         "City": "Rote",
         "Country": "Cambodia",
         "Photos": [
@@ -122,7 +122,7 @@
         "LastActive": "2020-05-24",
         "Introduction": "Greetings! I'm York, and I believe in making the most of every moment. Life is a gift, and I aim to enjoy it to the fullest. Let's create beautiful memories together!",
         "LookingFor": "I'm looking for a companion who values simplicity and enjoys the beauty of everyday life. Whether it's a quiet evening at home or a leisurely stroll, I appreciate the little things.",
-        "Interests": "I find joy in reading, painting, and spending time in nature. There's something magical about the outdoors that brings tranquility to my soul.",
+        "Interest": "I find joy in reading, painting, and spending time in nature. There's something magical about the outdoors that brings tranquility to my soul.",
         "City": "Ruckersville",
         "Country": "Mongolia",
         "Photos": [
@@ -141,7 +141,7 @@
         "LastActive": "2020-06-09",
         "Introduction": "Hey there! I'm Kinney, and I believe in the power of positivity and kindness. I'm a firm believer that small acts of kindness can make the world a better place. Let's spread some positivity!",
         "LookingFor": "I'm looking for someone who shares my passion for making the world a better place. If you believe in the power of kindness and enjoy volunteering, we'll get along wonderfully.",
-        "Interests": "I'm passionate about volunteering for charitable causes, practicing mindfulness, and exploring new cultures through travel.",
+        "Interest": "I'm passionate about volunteering for charitable causes, practicing mindfulness, and exploring new cultures through travel.",
         "City": "Turpin",
         "Country": "San Marino",
         "Photos": [
@@ -160,7 +160,7 @@
         "LastActive": "2020-05-26",
         "Introduction": "Hello, I'm Tate, and I believe in living life to the fullest. I have an adventurous spirit and a love for trying new things. Let's make every day an exciting journey!",
         "LookingFor": "I'm looking for a fellow adventurer who shares my passion for exploring and trying new experiences. Whether it's traveling to new destinations or taking on outdoor challenges, let's seize the moment.",
-        "Interests": "I enjoy outdoor activities like hiking and camping. I'm also a photography enthusiast, capturing the beauty of nature and our adventures.",
+        "Interest": "I enjoy outdoor activities like hiking and camping. I'm also a photography enthusiast, capturing the beauty of nature and our adventures.",
         "City": "Nettie",
         "Country": "Kenya",
         "Photos": [
@@ -179,7 +179,7 @@
         "LastActive": "2020-05-14",
         "Introduction": "Hi, I'm Bass, and I believe in embracing life's adventures with an open heart. I'm a creative soul who finds inspiration in everyday moments. Let's create art and memories together!",
         "LookingFor": "I'm looking for someone who appreciates creativity and enjoys exploring their artistic side. Whether it's painting, photography, or simply appreciating the beauty of the world, let's share our artistic passions.",
-        "Interests": "I'm an artist at heart and love to express myself through painting and photography. I also find inspiration in the world of music and enjoy attending live performances.",
+        "Interest": "I'm an artist at heart and love to express myself through painting and photography. I also find inspiration in the world of music and enjoy attending live performances.",
         "City": "Linwood",
         "Country": "Latvia",
         "Photos": [

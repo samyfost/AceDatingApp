@@ -21,7 +21,6 @@ public class UsersController : BaseApiController
         _userRepository = userRepository;
         _mapper = mapper;
     }
-
     [HttpGet]
     public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
     {
