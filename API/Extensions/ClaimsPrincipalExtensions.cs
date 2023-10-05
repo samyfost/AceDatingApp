@@ -1,15 +1,11 @@
-using System.Security.Claims;
+﻿using System.Security.Claims;
 
+namespace API.Extensions;
 
-namespace API.Extensions
+public static class ClaimsPrincipalExtensions
 {
-    public static class ClaimsPrincipalExtensions
+    public static string GetUsername(this ClaimsPrincipal user)
     {
-        public static string GetUsername(this ClaimsPrincipal user)
-        {
-            return user.FindFirst(ClaimTypes.Name)?.Value;
-
-        }
-
+        return user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     }
 }

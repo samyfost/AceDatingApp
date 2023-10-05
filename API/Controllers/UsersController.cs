@@ -29,7 +29,7 @@ public class UsersController : BaseApiController
     [HttpGet]
     public async Task<ActionResult<PagedList<MemberDto>>> GetUsers([FromQuery]UserParams userParams)
     {
-        var currentUser = await _userRepository.GetUserByUsernameAsync(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var currentUser = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 
         userParams.CurrentUsername = currentUser.UserName;
 
@@ -55,7 +55,7 @@ public class UsersController : BaseApiController
     public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
     {
     var username=User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        var user = await _userRepository.GetUserByUsernameAsync(username);
+        var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 
         if(user == null) return NotFound();
 
@@ -70,7 +70,7 @@ public class UsersController : BaseApiController
     public async Task<ActionResult<PhotoDto>> AddPhoto(IFormFile file)
     {
         //error sa GetUsername()
-        var user = await _userRepository.GetUserByUsernameAsync(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 
         if (user == null)
         {
@@ -108,7 +108,7 @@ public class UsersController : BaseApiController
 
     public async Task<ActionResult> SetMainPhoto(int photoId)
     {
-        var user = await _userRepository.GetUserByUsernameAsync(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 
         if (user == null) return NotFound();
         var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
@@ -130,7 +130,7 @@ public class UsersController : BaseApiController
     [HttpDelete("delete-photo/{photoId}")]
     public async Task<ActionResult> DeletePhoto(int photoId)
     {
-        var user = await _userRepository.GetUserByUsernameAsync(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
 
         var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
 
