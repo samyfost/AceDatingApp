@@ -53,7 +53,7 @@
                 <gallery *ngIf="photoTab.active" [items]="images" thumbPosition="left" class="gallery"></gallery>
             </tab>
             <tab heading="Messages">
-                <h4>Messages</h4>
+                <app-member-messages [username]="member.userName"></app-member-messages>
             </tab>
             <tab heading="Reservation">
                 <h4>Reservation</h4>
