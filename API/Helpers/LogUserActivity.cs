@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
 using API.Extensions;
 using API.Interfaces;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace API.Helpers
 {
@@ -18,9 +13,11 @@ namespace API.Helpers
             if (!resultContext.HttpContext.User.Identity.IsAuthenticated) return;
 
 
-            var username = resultContext.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            //var username = resultContext.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             //var userId = resultContext.HttpContext.User.GetUserId();
             
+            var username = resultContext.HttpContext.User.GetUsername();
+
             var repo = resultContext.HttpContext.RequestServices.GetRequiredService<IUserRepository>();
 
             var user = await repo.GetUserByUsernameAsync(username);
