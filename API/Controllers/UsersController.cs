@@ -13,7 +13,7 @@ using System.Security.Claims;
 
 namespace API;
 
-[Authorize]
+//[Authorize]
 public class UsersController : BaseApiController
 {
     private readonly IUserRepository _userRepository;
@@ -26,8 +26,6 @@ public class UsersController : BaseApiController
         _userRepository = userRepository;
         _mapper = mapper;
     }
-
-    [Authorize(Roles ="Admin")]
     [HttpGet]
     public async Task<ActionResult<PagedList<MemberDto>>> GetUsers([FromQuery]UserParams userParams)
     {
@@ -45,17 +43,13 @@ public class UsersController : BaseApiController
        return Ok(users);
     }
 
-
-    [Authorize(Roles ="Member")]
     [HttpGet("{username}")]
-
     public async Task<ActionResult<MemberDto>> GetUser(string username)
     {
         return await _userRepository.GetMemberAsync(username);
 
     }
     [HttpPut]
-
     public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
     {
     var username=User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -109,7 +103,6 @@ public class UsersController : BaseApiController
     }
 
     [HttpPut("set-main-photo/{photoId}")]
-
     public async Task<ActionResult> SetMainPhoto(int photoId)
     {
         var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());

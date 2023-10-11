@@ -16,7 +16,7 @@ namespace API.Controllers
         }
         [Authorize(Policy ="RequireAdminRole")]
         [HttpGet("users-with-roles")]
-        public async Task<ActionResult> GetUserWithRoles() {
+        public async Task<ActionResult> GetUsersWithRoles() {
             var users = await _userManager.Users.OrderBy(u => u.UserName)
             .Select(u => new {
                 u.Id,
@@ -40,7 +40,7 @@ namespace API.Controllers
 
             var user  = await _userManager.FindByNameAsync(username);
 
-            if(user == null) return NotFound();
+            if (user == null) return NotFound();
 
             var userRoles = await _userManager.GetRolesAsync(user);
 
@@ -49,6 +49,8 @@ namespace API.Controllers
             if(!result.Succeeded) return BadRequest("Failed to add to roles");
 
             result = await _userManager.RemoveFromRolesAsync(user, userRoles.Except(selectedRoles));
+
+            if(!result.Succeeded) BadRequest("Failed to remove from roles");
 
             return Ok(await _userManager.GetRolesAsync(user));
 

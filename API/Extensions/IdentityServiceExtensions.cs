@@ -20,7 +20,8 @@ namespace API.Extensions
             .AddEntityFrameworkStores<DataContext>();
 
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
         {
            options.TokenValidationParameters = new TokenValidationParameters
         {
@@ -31,6 +32,7 @@ namespace API.Extensions
         ValidateAudience = false
         };
         });
+        
 
         services.AddAuthorization(opt => 
         {
@@ -38,6 +40,7 @@ namespace API.Extensions
             opt.AddPolicy("ModeratePhotoRole", policy => policy.RequireRole("Admin","Moderator"));
 
         });
+        
         return services;
         }
     }
