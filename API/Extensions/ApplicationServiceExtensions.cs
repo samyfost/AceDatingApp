@@ -6,6 +6,7 @@ using API.Helpers;
 using API.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using API.SignalR;
 
 namespace API.Extensions
 {
@@ -27,6 +28,7 @@ namespace API.Extensions
         services.AddScoped<ILikesRepository, LikesRepository>();
         services.AddScoped<IMessageRepository, MessageRepository>();
         services.AddSignalR();
+        services.AddSingleton<PresenceTracker>();
 
 
         return services;
